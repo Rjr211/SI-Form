@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css"  href="./css/style.css">
+    <title>Synergize Insights Form</title>
+</head>
+
+<body>
+    <!--Background Image-->
+    <img src="./assets/img/city1.jpg" id="bg" alt="">
+    <!--Layer to dim background-->
+    <div class="layer"></div>
+    
+    <div class="container">
+        <div class="row">
+                <div class="brand-logo-container">
+                        <img class="brand-logo" src="./assets/img/SInsightsLogo.png">
+                    </div>
+            <div class="col-md-10 mx-auto">
+                <form id="form">
+                    <div class="form-group">
+                        <label id="label-name">Name</label>
+                        <img class="name-icon" src="./assets/img/person-24px.svg" alt="name icon" srcset="./assets/img/person-24px.svg">
+                        <input type="text" class="form-control" id="name" placeholder="full name">
+                        <div class="invalid-feedback">
+                            Name must be between 2 and 20 characters.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label id="label-zipcode">Zipcode</label>
+                        <img class="zipcode-icon" src="./assets/img/room-24px.svg" alt="zipcode icon" srcset="./assets/img/room-24px.svg">
+                        <input type="text" class="form-control" id="zipcode" placeholder="Zipcode">
+                        <div class="invalid-feedback">
+                            Enter a valid zipcode.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label id="label-email">Email</label>
+                        <img class="email-icon" src="./assets/img/email-24px.svg" alt="email icon" srcset="./assets/img/email-24px.svg">
+                        <input type="text" class="form-control" id="email" placeholder="Email">
+                        <div class="invalid-feedback">
+                            Enter a valid email address.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label id="label-age">Age</label>
+                        <img class="age-icon" src="./assets/img/cake-24px.svg" alt="age icon" srcset="./assets/img/cake-24px.svg">
+                        <input type="number" class="form-control" id="age" placeholder="age">
+                        <div class="invalid-feedback">
+                            You must be 18 years old or older.
+                        </div>
+                        <div class="custom-control custom-checkbox mb-3" id="age-verification">
+                                <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                                <label id="age-verification-label" class="custom-control-label" for="customControlValidation1">I confirm that I am 18 years of age or older</label>
+                                <div class="invalid-feedback">
+                                        You must be 18 years old or older.
+                                    </div>
+                              </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <h6>How did you hear about us?</h6>
+                    <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                            <label class="custom-control-label radio-option" for="customRadioInline1">Social Media</label>
+                          </div>
+                          <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                            <label class="custom-control-label radio-option" for="customRadioInline2">Student Embassador</label>
+                          </div>
+                          <div class="custom-control custom-radio custom-control-inline">
+                                <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                                <label class="custom-control-label radio-option" for="customRadioInline3">Event</label>
+                              </div>
+                        </div>
+                    <input id="submit" type="submit" value="submit" class="btn btn-primary btn-block btn-rounded">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

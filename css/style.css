@@ -1,0 +1,173 @@
+/*Removes arrows from Number Input*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+
+
+#bg {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    margin:0;
+    z-index: -1;
+    text-align: center;
+    width: 20rem;
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .layer {
+    background-color: #6666661f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+h6{
+    text-align: center;
+}
+
+.radio-option{
+font-size: 14px;
+}
+
+hr{
+    border: .5px solid #6ae53b;
+    margin-top:0;
+    width: 6rem;
+}
+
+
+/*Icons*/
+.name-icon{
+    width:20px;
+    height: 20px;
+    float: left;
+    position: absolute;
+    margin-top: 33px;
+    margin-left: -31px;
+    filter: invert(79%) sepia(1%) saturate(0%) hue-rotate(55deg) brightness(83%) contrast(91%);
+}
+
+.zipcode-icon{
+    width:20px;
+    height: 20px;
+    float: left;
+    position: absolute;
+    margin-top: 33px;
+    margin-left: -46px;
+    filter: invert(79%) sepia(1%) saturate(0%) hue-rotate(55deg) brightness(83%) contrast(91%);
+}
+
+.email-icon{
+    width:20px;
+    height: 20px;
+    float: left;
+    position: absolute;
+    margin-top: 33px;
+    margin-left: -29px;
+    filter: invert(79%) sepia(1%) saturate(0%) hue-rotate(55deg) brightness(83%) contrast(91%);
+}
+
+.age-icon{
+    width:20px;
+    height: 20px;
+    float: left;
+    position: absolute;
+    margin-top: 32px;
+    margin-left: -20px;
+    filter: invert(79%) sepia(1%) saturate(0%) hue-rotate(55deg) brightness(83%) contrast(91%);
+}
+
+.brand-logo-container{
+    background: rgb(1,124,121);
+    background: linear-gradient(90deg, rgba(1,124,121,1) 0%, rgba(0,76,74,1) 37%, rgba(0,56,55,1) 66%, rgba(0,41,40,1) 98%, rgba(0,41,40,1) 100%);
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    height: 70px;
+    text-align: center;
+}
+
+.container{
+    width: 30rem;
+    height: 40rem;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+#name, #zipcode, #email, #age{
+    text-indent: 20px;
+}
+
+
+#name::placeholder, #zipcode::placeholder, #email::placeholder, #age::placeholder{
+    color: #a3a3a3;
+    text-transform: capitalize;
+    font-size: 13px;
+}
+
+
+#age-verification{
+    margin-top: 10px;
+}
+
+#age-verification-label{
+    margin: 0 0 -20px 0; 
+    padding-top: 3px;
+    font-size: 12px;
+}
+
+#label-name, #label-zipcode, #label-email, #label-age{
+    margin: 0 0 -20px 0; 
+    padding: 0;
+    font-size: 15px;
+    text-transform: capitalize;
+} 
+
+form{
+    margin-top: 20px;
+}
+
+.brand-logo{
+    margin-top: 20px;
+    text-align: center;
+    width: 20rem;
+    filter: brightness(100%); 
+}
+
+.form-group{
+    padding: 10px;
+    margin: 0;
+    position: relative;
+}
+
+#submit{
+    margin-top: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    background: rgb(1,124,121);
+    background: linear-gradient(90deg, rgba(1,124,121,1) 0%, rgba(0,76,74,1) 37%, rgba(0,56,55,1) 66%, rgba(0,41,40,1) 98%, rgba(0,41,40,1) 100%);
+    text-transform: uppercase;
+    font-size: 13px;
+    height: 38px;
+    font-weight: bold; 
+    border-radius: 50px;
+    border: none;
+}
+
+#submit:active {
+    transform: translateY(2px);
+}
+
+.invalid-feedback{
+    margin: 0;
+    padding: 0;
+}
+
